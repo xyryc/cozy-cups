@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Heading = ({ title, subtitle }) => {
   return (
     <div className="flex flex-col w-full justify-center items-center my-12">
