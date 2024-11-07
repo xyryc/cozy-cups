@@ -7,7 +7,7 @@ const CoffeeDetails = () => {
   const allCoffeeData = useLoaderData();
   const { id } = useParams();
   const [coffee, setCoffee] = useState({});
-  const [isFavourite, setIsFavourite] = useState(false)
+  const [isFavourite, setIsFavourite] = useState(false);
 
   const {
     name,
@@ -29,20 +29,19 @@ const CoffeeDetails = () => {
     );
     setCoffee(singleData);
 
-    const favourites = getAllFavourites()
-    const isExist = favourites.find((item) => item.id === singleData.id)
+    const favourites = getAllFavourites();
+    const isExist = favourites.find((item) => item.id === singleData.id);
 
-    if(isExist){
-      setIsFavourite(true)
-    }else{
-      setIsFavourite(false)
+    if (isExist) {
+      setIsFavourite(true);
+    } else {
+      setIsFavourite(false);
     }
-
   }, [allCoffeeData, id]);
 
   const handleFavourite = (coffee) => {
     addFavourite(coffee);
-    setIsFavourite(true)
+    setIsFavourite(true);
   };
 
   return (
@@ -71,7 +70,7 @@ const CoffeeDetails = () => {
 
         <div>
           <button
-          disabled={isFavourite}
+            disabled={isFavourite}
             onClick={() => handleFavourite(coffee)}
             className="btn btn-warning"
           >
