@@ -10,7 +10,7 @@ const Categories = ({ categories }) => {
           to={`/category/${category.category}`}
           role="tab"
           className={({ isActive }) =>
-            `tab text-2xl font-thin ${isActive ? "tab-active font-normal" : ""}`
+            `tab text-2xl  ${isActive ? "tab-active font-normal" : "font-thin"}`
           }
         >
           {category.category}
