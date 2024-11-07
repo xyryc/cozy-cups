@@ -3,13 +3,15 @@ import { NavLink } from "react-router-dom";
 
 const Categories = ({ categories }) => {
   return (
-    <div role="tablist" className="tabs tabs-bordered">
+    <div role="tablist" className="tabs">
       {categories.map((category) => (
         <NavLink
           key={category.category}
           to={`/category/${category.category}`}
           role="tab"
-          className={ ({isActive})=> `tab text-2xl font-thin  ${isActive? 'tab-active' : ''}`}
+          className={({ isActive }) =>
+            `tab text-2xl font-thin ${isActive ? "tab-active font-normal" : ""}`
+          }
         >
           {category.category}
         </NavLink>
