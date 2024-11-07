@@ -5,6 +5,7 @@ import { addFavourite, getAllFavourites } from "../utils/localStorage";
 
 const CoffeeDetails = () => {
   const allCoffeeData = useLoaderData();
+  console.log(allCoffeeData)
   const { id } = useParams();
   const [coffee, setCoffee] = useState({});
   const [isFavourite, setIsFavourite] = useState(false);

@@ -1,3 +1,5 @@
 # Cozy Cups
 
-[Live Link](https://cozy-cups.surge.sh)
+[Live Link 1](https://cozy-cups.netlify.app/)
+
+[Live Link 2](https://cozy-cups.surge.sh)

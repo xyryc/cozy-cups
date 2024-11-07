@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Coffees = () => {
   const data = useLoaderData();
+  console.log(data)
   const [coffees, setCoffees] = useState(data);
 
   const handleSort = (sortBy) => {
