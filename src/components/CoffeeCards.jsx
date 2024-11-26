@@ -27,14 +27,15 @@ const CoffeeCards = () => {
           <Card key={coffee.id} coffee={coffee}></Card>
         ))}
       </div>
-      <button
+ 
+ <p className="text-center">     <button
         className="btn btn-warning"
         onClick={() => {
           navigate("/coffees");
         }}
       >
         View All
-      </button>
+      </button></p>
     </>
   );
 };
